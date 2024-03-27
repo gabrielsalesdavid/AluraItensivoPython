@@ -1,4 +1,5 @@
 import pandas as pd
+import plotly.express as px
 
 # df(DataFrame)Principal seria a aba da planilha do excel.
 # que esta sendo atribuida com valores para a variavel que caminha e busca o arquivo.
@@ -76,3 +77,19 @@ print(f"Menor\tR$ {menor:, .2f}")
 print(f"Media\tR$ {media:, .2f}")
 print(f"Media de quem subiu\tR$ {mediaSubiu:, .2f}")
 print(f"Media de quem desceu\tR$ {mediaDesceu:, .2f}")
+
+# cria uma coluna com dados de media da variação.
+dfPrincipalSubiu = dfPrincipal[dfPrincipal['coluna'] == 'mensagem']['coluna']
+dfPrincipalSubiu
+
+# retorna uma soma de colunas.
+dfAnaliseSegmento = dfPrincipalSubiu.groupby('coluna')['coluna'].sum().reset_index()
+dfAnaliseSegmento
+
+# retorna os dados da coluna com uma valor somado de tudo. Ou seja, se subiu, ficou estavel e ou desceu!
+dfAnaliseSaldo = dfAnaliseSaldo.groupby('coluna')['coluna'].sum().reset_index()
+dfAnaliseSaldo
+
+# criação de grafico.
+fig = px.bar(dfAnaliseSaldo, x = 'coluna', y = 'coluna', text = 'coluna', title = 'titulo')
+fig.show()
