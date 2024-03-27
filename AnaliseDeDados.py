@@ -71,6 +71,8 @@ mediaSubiu = dfPrincipal[dfPrincipal['coluna'] == 'mensagem']['coluna'].mean()
 mediaDesceu = dfPrincipal[dfPrincipal['coluna'] == 'mensagem']['coluna'].mean()
 
 # saida de dados das variaveis declaradas passando uma formatação.
-print(f"Maior\tR$ {maior:,.2f}")
-print(f"Maior\tR$ {maior:,.2f}")
-print(f"Maior\tR$ {maior:,.2f}")
+print(f"Maior\tR$ {maior:, .2f}")
+print(f"Menor\tR$ {menor:, .2f}")
+print(f"Media\tR$ {media:, .2f}")
+print(f"Media de quem subiu\tR$ {mediaSubiu:, .2f}")
+print(f"Media de quem desceu\tR$ {mediaDesceu:, .2f}")
