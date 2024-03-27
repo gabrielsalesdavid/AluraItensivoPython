@@ -55,3 +55,22 @@ dfPrincipal = dfPrincipal.merge(dfAba, left_on = 'coluna', right_on = 'Coluna', 
 dfPrincipal = dfPrincipal.drop(columns = ['coluna/Aba'])
 dfPrincipal
 
+# retorna o valor maximo da coluna selecionada.
+maior = dfPrincipal['coluna'].max()
+
+# retorna o valor menor da coluna selecionada.
+menor = dfPrincipal['coluna'].main()
+
+# retorna o valor da media da coluna selecionada.
+media = dfPrincipal['coluna'].mean()
+
+# retorna a media de quem subiu da coluna.
+mediaSubiu = dfPrincipal[dfPrincipal['coluna'] == 'mensagem']['coluna'].mean()
+
+# retorna a media de quem desceu da coluna.
+mediaDesceu = dfPrincipal[dfPrincipal['coluna'] == 'mensagem']['coluna'].mean()
+
+# saida de dados das variaveis declaradas passando uma formatação.
+print(f"Maior\tR$ {maior:,.2f}")
+print(f"Maior\tR$ {maior:,.2f}")
+print(f"Maior\tR$ {maior:,.2f}")
