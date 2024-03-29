@@ -1,5 +1,11 @@
 import pandas as pd
 import plotly.express as px
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+import mplfinance as mpf
+import yfinance as yf
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 # df(DataFrame)Principal seria a aba da planilha do excel.
 # que esta sendo atribuida com valores para a variavel que caminha e busca o arquivo.
@@ -89,7 +95,3 @@ dfAnaliseSegmento
 # retorna os dados da coluna com uma valor somado de tudo. Ou seja, se subiu, ficou estavel e ou desceu!
 dfAnaliseSaldo = dfAnaliseSaldo.groupby('coluna')['coluna'].sum().reset_index()
 dfAnaliseSaldo
-
-# criação de grafico.
-fig = px.bar(dfAnaliseSaldo, x = 'coluna', y = 'coluna', text = 'coluna', title = 'titulo')
-fig.show()
