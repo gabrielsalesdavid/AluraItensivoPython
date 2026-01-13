@@ -13,10 +13,11 @@ Este repositório está organizado em três seções principais:
 ```
 AluraItensivoPython/
 ├── README.md                          # Este arquivo
-├── Fundamentos/
-│   └── Python_Fundamentos.md          # Documentação dos fundamentos
-├── Conceitos/
-│   └── Python_Conceitos.md            # Documentação de conceitos avançados
+├── Docs/
+│   ├── Fundamentos/
+│   │   └── Python_Fundamentos.md      # Documentação dos fundamentos
+│   └── Conceitos/
+│       └── Python_Conceitos.md        # Documentação de conceitos avançados
 ├── AnaliseDeDados.py                  # Análise e manipulação de dados
 ├── BuscaAcoesAno.py                   # Busca de ações por período
 └── BuscaDeAcoesNoAPI.py               # Integração com API de ações
@@ -40,7 +41,7 @@ Documentação completa dos conceitos básicos necessários para programar em Py
 - **Entrada e Saída**: input, print, leitura e escrita de arquivos
 - **Boas Práticas**: PEP 8, nomenclatura, comentários
 
-👉 [Leia a documentação completa de Fundamentos](Fundamentos/Python_Fundamentos.md)
+👉 [Leia a documentação completa de Fundamentos](Docs/Fundamentos/Python_Fundamentos.md)
 
 ### 2. **Conceitos Avançados** 🚀
 Técnicas profissionais e padrões para desenvolvimento avançado em Python:
@@ -58,7 +59,7 @@ Técnicas profissionais e padrões para desenvolvimento avançado em Python:
 - **Padrões de Design**: Singleton, Factory, Observer
 - **Async/Await**: Programação assíncrona
 
-👉 [Leia a documentação completa de Conceitos](Conceitos/Python_Conceitos.md)
+👉 [Leia a documentação completa de Conceitos](Docs/Conceitos/Python_Conceitos.md)
 
 ### 3. **Exemplos Práticos** 💻
 Scripts demonstrando aplicações reais de Python:
@@ -122,8 +123,8 @@ mplfinance     # Gráficos financeiros
 
 ### Leitura das Documentações
 
-1. **Comece pelo [Fundamentos](Fundamentos/Python_Fundamentos.md)** se você é iniciante
-2. **Avance para [Conceitos](Conceitos/Python_Conceitos.md)** quando dominar os fundamentos
+1. **Comece pelo [Fundamentos](Docs/Fundamentos/Python_Fundamentos.md)** se você é iniciante
+2. **Avance para [Conceitos](Docs/Conceitos/Python_Conceitos.md)** quando dominar os fundamentos
 3. **Explore os scripts práticos** para ver aplicações reais
 
 ### Executando os Exemplos
